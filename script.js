@@ -3,12 +3,14 @@ speech.continuous = true
 speech.interimResults = false
 
 function setup() {
-  speech.start()
+    speech.start()
 }
 
 function parseResult() {
     if (speech.resultValue) {
-      alert(speech.resultString)
+        const color = speach.resultString.split(' ').pop().toUpperCase()
+        document.getElementById('lol').style.backgroundColor = color
+
     }
   }
   
