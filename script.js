@@ -8,9 +8,8 @@ function setup() {
 
 function parseResult() {
     if (speech.resultValue) {
-        const color = speach.resultString.split(' ').pop().toUpperCase()
+        const color = speech.resultString.split(' ').pop().toUpperCase()
         document.getElementById('lol').style.backgroundColor = color
-
     }
   }
   
